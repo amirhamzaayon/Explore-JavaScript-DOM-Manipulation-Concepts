@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Theme -->
+    <html data-theme="light"></html>
+    <!-- <script src="script.js"></script> -->
+  </head>
+
+  <body class="bg-white">
+    <!-- <nav
+      class="total-amount bg-[#F9F7F3]  py-6 sm:px-36 flex justify-between  items-center >
+      <a href="blog.html">
+        <button class="bg-[#B4F461] text-[#111] font-semibold px-8 py-3 rounded-lg">
+          Blog
+        </button>
+      </a>
+      <div class="flex gap-4 justify-center items-center">
+        <img src="assets/logo.png" alt="" />
+        <p class="text-xl font-semibold text-[#111]">Donate Bangladesh</p>
+      </div>
+      <div class="flex gap-3 bg-[#171717]/[.05] px-8 py-3 rounded-lg">
+        <img src="assets/coin.png" alt="" />
+        <p class="text-xl font-medium text-[#171717]/[.7]">5000 BDT</p>
+      </div>
+    </nav> -->
+
+    <nav
+      class="total-amount bg-[#F9F7F3] py-6 sm:px-36 flex justify-between items-center sticky top-0 z-50">
+      <a href="blog.html">
+        <button
+          class="bg-[#B4F461] text-[#111] font-semibold px-8 py-3 rounded-lg">
+          Blog
+        </button>
+      </a>
+      <div class="flex gap-4 justify-center items-center">
+        <img src="assets/logo.png" alt="" />
+        <p class="text-xl font-semibold text-[#111]">Donate Bangladesh</p>
+      </div>
+      <div class="flex gap-3 bg-[#171717]/[.05] px-8 py-3 rounded-lg">
+        <img src="assets/coin.png" alt="" />
+        <p class="text-xl font-medium text-[#171717]/[.7]">5000 BDT</p>
+      </div>
+    </nav>
+
+    <section class="flex flex-col gap-8 justify-center items-center mt-10">
+      <div class="flex gap-4 justify-center items-center">
+        <button
+          id="donationButton"
+          class="donationButton bg-[#B4F461] text-[#111] font-semibold px-8 py-4 rounded-lg">
+          Donation
+        </button>
+        <button
+          id="historyButton"
+          class="historyButton bg-[#B4F461] text-[#111] font-semibold px-8 py-4 rounded-lg">
+          History
+        </button>
+      </div>
+      <div
+        id="donationCards"
+        class="donation-cards flex flex-col gap-8 justify-center items-center">
+        <div
+          class="donate-card sm:w-[1076px] w-[400px] flex sm:flex-row flex-col gap-8 p-8 border-2 rounded-lg border-[#171717]/[.1]">
+          <div>
+            <img src="assets/noakhali.png" alt="" />
+          </div>
+          <div class="basis-1/2 flex flex-col gap-4">
+            <div
+              class="total-donation w-fit flex gap-3 px-4 py-[10px] rounded-lg bg-[#171717]/[.05]">
+              <img src="assets/coin.png" alt="" />
+              <p class="text-xl font-medium text-[#171717]/[.7]">5000 BDT</p>
+            </div>
+            <h1 class="text-[20px] font-semibold text-[#111]">
+              Donate for Flood at Noakhali, Bangladesh
+            </h1>
+            <p class="text-[16px] font-light text-[#171717]/[.7]">
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <input
+              class="p-[18px] border-2 rounded-lg border-[#171717]/[.1]"
+              type="number"
+              placeholder="Write Donation Amount" />
+            <button
+              class="bg-[#B4F461] text-[#111] font-bold px-8 py-4 rounded-lg">
+              Donate Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="donate-card sm:w-[1076px] w-[400px] flex sm:flex-row flex-col gap-8 p-8 border-2 rounded-lg border-[#171717]/[.1]">
+          <div>
+            <img src="assets/feni.png" alt="" />
+          </div>
+          <div class="basis-1/2 flex flex-col gap-4">
+            <div
+              class="total-donation w-fit flex gap-3 px-4 py-[10px] rounded-lg bg-[#171717]/[.05]">
+              <img src="assets/coin.png" alt="" />
+              <p class="text-xl font-medium text-[#171717]/[.7]">5000 BDT</p>
+            </div>
+            <h1 class="text-[20px] font-semibold text-[#111]">
+              Donate for Flood Relief in Feni,Bangladesh
+            </h1>
+            <p class="text-[16px] font-light text-[#171717]/[.7]">
+              The recent floods in Feni have devastated local communities,
+              leading to severe disruption and loss. Your generous donation will
+              help provide immediate aid, including food, clean water, and
+              medical supplies, to those affected by this calamity. Together, we
+              can offer crucial support and help rebuild lives in the aftermath
+              of this disaster. Every contribution counts towards making a real
+              difference. Please consider donating today to assist those in
+              urgent need.
+            </p>
+            <input
+              class="p-[18px] border-2 rounded-lg border-[#171717]/[.1]"
+              type="number"
+              placeholder="Write Donation Amount" />
+            <button
+              class="bg-[#B4F461] text-[#111] font-bold px-8 py-4 rounded-lg">
+              Donate Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="donate-card sm:w-[1076px] w-[400px] flex sm:flex-row flex-col gap-8 p-8 border-2 rounded-lg border-[#171717]/[.1]">
+          <div>
+            <img src="assets/quota-protest.png" alt="" />
+          </div>
+          <div class="basis-1/2 flex flex-col gap-4">
+            <div
+              class="total-donation w-fit flex gap-3 px-4 py-[10px] rounded-lg bg-[#171717]/[.05]">
+              <img src="assets/coin.png" alt="" />
+              <p class="text-xl font-medium text-[#171717]/[.7]">5000 BDT</p>
+            </div>
+            <h1 class="text-[20px] font-semibold text-[#111]">
+              Aid for Injured in the Quota Movement
+            </h1>
+            <p class="text-[16px] font-light text-[#171717]/[.7]">
+              The recent Quota movement has resulted in numerous injuries and
+              significant hardship for many individuals. Your support is crucial
+              in providing medical assistance, rehabilitation, and necessary
+              supplies to those affected. By contributing, you help ensure that
+              injured individuals receive the care and support they need during
+              this challenging time. Every donation plays a vital role in
+              alleviating their suffering and aiding in their recovery. Please
+              consider making a donation to support these brave individuals in
+              their time of need.
+            </p>
+            <input
+              class="p-[18px] border-2 rounded-lg border-[#171717]/[.1]"
+              type="number"
+              placeholder="Write Donation Amount" />
+            <button
+              class="bg-[#B4F461] text-[#111] font-bold px-8 py-4 rounded-lg">
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="historyCards" class="history-cards hidden">
+      <section
+        class="history-card flex flex-col gap-8 justify-center items-center mt-10">
+        <!-- <div
+          class="history-card sm:w-[1076px] w-[400px] flex flex-col gap-8 p-8 border-2 rounded-lg border-[#171717]/[.1]">
+          <h1 class="text-[20px] font-semibold text-[#111]">
+            96500 Taka is Donate for Flood at Noakhali, Bangladesh
+          </h1>
+          <p class="text-[16px] font-light text-[#171717]/[.7]">
+            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+          </p>
+        </div> -->
+      </section>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
